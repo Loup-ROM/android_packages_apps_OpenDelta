@@ -26,8 +26,8 @@ BIN_XDELTA=$XDL_DIR/xdelta3
 BIN_ZIPADJUST=$JNI_DIR/zipadjust
 
 FILE_MATCH=lineage-*.zip
-PATH_CURRENT=$CRR_DIR
-PATH_LAST=$OLD_DIR
+PATH_CURRENT=$CRR_DIR/$DEVICE
+PATH_LAST=$OLD_DIR/$DEVICE
 
 KEY_X509=$HOME/build/target/product/security/testkey.x509.pem
 KEY_PK8=$HOME/build/target/product/security/testkey.pk8
