@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Script to generate delta files for OpenDelta - by Jorrit 'Chainfire' Jongma
+# Modded by bitrvmpd, depends on https://github.com/bitrvmpd/android_loup_tools/edit/cm-14.1/deltaenv.sh vars.
 
 # Get device either from $DEVICE set by calling script, or first parameter
 
@@ -17,19 +18,19 @@ fi
 
 # ------ CONFIGURATION ------
 
-HOME=/home/build
+HOME=$WORKSPACE
 
 BIN_JAVA=java
-BIN_MINSIGNAPK=$HOME/delta/minsignapk.jar
-BIN_XDELTA=$HOME/delta/xdelta3
-BIN_ZIPADJUST=$HOME/delta/zipadjust
+BIN_MINSIGNAPK=$DLT_DIR/minsignapk.jar
+BIN_XDELTA=$XDL_DIR/xdelta3
+BIN_ZIPADJUST=$JNI_DIR/zipadjust
 
-FILE_MATCH=omni-*.zip
-PATH_CURRENT=$HOME/omni/out/target/product/$DEVICE
-PATH_LAST=$HOME/delta/last/$DEVICE
+FILE_MATCH=lineage-*.zip
+PATH_CURRENT=$CRR_DIR
+PATH_LAST=$OLD_DIR
 
-KEY_X509=$HOME/.keys/platform.x509.pem
-KEY_PK8=$HOME/.keys/platform.pk8
+KEY_X509=$HOME/build/target/product/security/testkey.x509.pem
+KEY_PK8=$HOME/build/target/product/security/testkey.pk8
 
 # ------ PROCESS ------
 
