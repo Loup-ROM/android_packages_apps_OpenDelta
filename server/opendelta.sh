@@ -161,8 +161,5 @@ cp out/* publish/$DEVICE/.
 rm -rf work
 rm -rf out
 
-rm -rf $PATH_LAST/*
-mkdir -p $PATH_LAST
-cp $PATH_CURRENT/$FILE_CURRENT $PATH_LAST/$FILE_CURRENT
-
+cat $DELTA
 exit 0
