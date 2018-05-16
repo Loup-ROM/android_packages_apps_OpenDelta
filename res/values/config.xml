@@ -5,10 +5,10 @@
 	<item name="debug_output" type="bool">true</item>
 
 	<!-- Property to read for ROM version -->
-	<string name="property_version">ro.cm.version</string>
+	<string name="property_version">ro.lineage.version</string>
 
 	<!-- Property to read for device identifier -->
-	<string name="property_device">ro.cm.device</string>
+	<string name="property_device">ro.lineage.device</string>
 
 	<!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
 	<string name="filename_base">lineage-%s</string>
@@ -58,5 +58,5 @@
 	<string name="weekly_version_tag">WEEKLY</string>
 	<string name="security_version_tag">SECURITY_RELEASE</string>
 
-	<string name="android_version">ro.cm.version</string>
+	<string name="android_version">ro.lineage.version</string>
 </resources>
